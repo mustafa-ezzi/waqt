@@ -11,7 +11,7 @@ export const site = {
    */
   r2BaseUrl: "https://pub-b595938c261548e68ebec2b2c60f92b2.r2.dev",
   heroProductId: "wqt-001",
-  stillLifeImage: "/watches/brand/hero-pair.png",
+  stillLifeImage: "product/Fauve.jpeg",
   logo: "/logo.jpg",
 };
 

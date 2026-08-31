@@ -137,8 +137,8 @@ export function Home() {
         </div>
         <Reveal className="still-frame">
           <WatchImage
-            src={site.stillLifeImage}
-            alt="WAAQT timepieces on midnight navy"
+            src={r2(site.stillLifeImage)}
+            alt="Jubilee — two-tone fluted bezel"
             className="still-img"
             ratio="16 / 9"
           />
