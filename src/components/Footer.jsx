@@ -1,0 +1,25 @@
+import { Link } from "react-router-dom";
+import { site } from "../data/site.js";
+
+export function Footer() {
+  return (
+    <footer className="footer">
+      <div className="wrap footer-inner">
+        <p className="footer-mark">WAAQT</p>
+        <p className="footer-line">Time, origin, and craft — {site.origin}.</p>
+        <nav className="footer-links">
+          <Link to="/collection">Collection</Link>
+          <Link to="/about">About</Link>
+          <a
+            href={`https://wa.me/${site.whatsappNumber}`}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            WhatsApp
+          </a>
+        </nav>
+        <p className="footer-legal">© {new Date().getFullYear()} WAAQT. All hours reserved.</p>
+      </div>
+    </footer>
+  );
+}

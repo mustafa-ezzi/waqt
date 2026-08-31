@@ -1,0 +1,31 @@
+:root {
+  --navy: #0a1628;
+  --navy-2: #12243f;
+  --navy-3: #1a3358;
+  --gold: #c9a227;
+  --gold-soft: #e8d5a3;
+  --gold-dim: rgba(201, 162, 39, 0.28);
+  --ivory: #f6f1e8;
+  --ivory-2: #efe6d6;
+  --white: #ffffff;
+  --ink: #0b0b0b;
+  --black: #1a1a1a;
+  --font-display: "Bodoni Moda", Didot, "Bodoni MT", "Times New Roman", serif;
+  --font-sans: "Outfit", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
+  --header-h: 4.5rem;
+  --max: 1280px;
+  --page: min(92vw, var(--max));
+  --hair: 1px solid var(--gold-dim);
+  --display-xl: clamp(3.1rem, 17vw, 14rem);
+  --display-l: clamp(2.6rem, 7vw, 6.2rem);
+  --display-m: clamp(2rem, 4.4vw, 3.6rem);
+  --body: 1.05rem;
+  --track: 0.28em;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --ease-luxe: ease;
+  }
+}
