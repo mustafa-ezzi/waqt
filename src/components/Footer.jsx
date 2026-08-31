@@ -28,7 +28,7 @@ export function Footer() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            TrisiteSolution
+            TrisiteSolutions
           </a>
         </p>
       </div>
