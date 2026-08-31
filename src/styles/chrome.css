@@ -72,28 +72,18 @@
 }
 
 .nav-mark {
-  display: block;
+  display: flex;
+  align-items: center;
+  height: 100%;
   flex-shrink: 0;
-  height: 4.9rem;
-  width: clamp(8.8rem, 48vw, 16.5rem);
-  overflow: hidden;
-}
-
-@media (min-width: 1100px) {
-  .nav-mark {
-    height: 5.15rem;
-    width: 16.5rem;
-  }
 }
 
 .nav-logo {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 46%;
-  transform: scale(1.92);
-  transform-origin: center center;
+  height: 3.35rem;
+  width: auto;
+  max-width: 7.5rem;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -268,21 +258,15 @@
 }
 
 .footer-mark {
-  display: block;
-  width: min(30rem, 82vw);
-  height: min(9.5rem, 26vw);
-  overflow: hidden;
-  margin-inline: auto;
+  display: inline-block;
 }
 
 .footer-logo {
   display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 46%;
-  transform: scale(1.85);
-  transform-origin: center center;
+  width: min(220px, 58vw);
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
 }
 
 .footer-line {
