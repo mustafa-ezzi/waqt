@@ -21,6 +21,16 @@ export function Footer() {
           </a>
         </nav>
         <p className="footer-legal">© {new Date().getFullYear()} WAAQT. All hours reserved.</p>
+        <p className="footer-credit">
+          Managed and designed by{" "}
+          <a
+            href="http://trisitesolutions.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            TrisiteSolution
+          </a>
+        </p>
       </div>
     </footer>
   );
