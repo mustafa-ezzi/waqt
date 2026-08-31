@@ -72,10 +72,18 @@
 }
 
 .nav-mark {
-  font-family: var(--font-display);
-  font-size: 1.55rem;
-  letter-spacing: 0.22em;
-  font-weight: 500;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  flex-shrink: 0;
+}
+
+.nav-logo {
+  display: block;
+  height: 3.35rem;
+  width: auto;
+  max-width: 7.5rem;
+  object-fit: contain;
 }
 
 .nav-links {
@@ -250,11 +258,15 @@
 }
 
 .footer-mark {
-  font-family: var(--font-display);
-  font-size: clamp(3.5rem, 12vw, 9rem);
-  line-height: 0.8;
-  color: var(--white);
-  opacity: 0.92;
+  display: inline-block;
+}
+
+.footer-logo {
+  display: block;
+  width: min(220px, 58vw);
+  height: auto;
+  margin-inline: auto;
+  object-fit: contain;
 }
 
 .footer-line {

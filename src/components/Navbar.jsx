@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link, NavLink, useLocation } from "react-router-dom";
 import { useCart } from "../context/CartContext.jsx";
+import { site } from "../data/site.js";
 
 const links = [
   { to: "/collection", label: "Collection" },
@@ -37,8 +38,8 @@ export function Navbar() {
     <div className={`nav-root ${open ? "is-open" : ""}`}>
       <header className={`nav ${solid ? "nav-solid" : ""}`}>
         <div className="nav-inner">
-          <Link to="/" className="nav-mark">
-            WAAQT
+          <Link to="/" className="nav-mark" aria-label={site.name}>
+            <img src={site.logo} alt={site.name} className="nav-logo" />
           </Link>
 
           <nav className="nav-links" aria-label="Primary">

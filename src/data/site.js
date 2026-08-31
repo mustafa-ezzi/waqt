@@ -12,6 +12,7 @@ export const site = {
   r2BaseUrl: "https://pub-xxxxxxxx.r2.dev",
   heroProductId: "wqt-001",
   stillLifeImage: "/watches/brand/hero-pair.png",
+  logo: "/logo.jpg",
 };
 
 export function r2(path) {
