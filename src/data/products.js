@@ -292,7 +292,7 @@ export const products = [
       { label: "Movement note", value: "Quartz, jewelry-grade" },
     ],
     images: {
-      hero: "",
+      hero: "product/Azur.jpeg",
       gallery: [],
     },
     featured: false,
@@ -320,7 +320,7 @@ export const products = [
       { label: "Movement note", value: "Quartz, jewelry-grade" },
     ],
     images: {
-      hero: "",
+      hero: "product/Fauve.jpeg",
       gallery: [],
     },
     featured: false,
