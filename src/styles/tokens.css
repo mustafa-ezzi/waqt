@@ -13,7 +13,7 @@
   --font-display: "Bodoni Moda", Didot, "Bodoni MT", "Times New Roman", serif;
   --font-sans: "Outfit", "Helvetica Neue", Helvetica, Arial, sans-serif;
   --ease-luxe: cubic-bezier(0.22, 1, 0.36, 1);
-  --header-h: 4.5rem;
+  --header-h: 5.85rem;
   --max: 1280px;
   --page: min(92vw, var(--max));
   --hair: 1px solid var(--gold-dim);
