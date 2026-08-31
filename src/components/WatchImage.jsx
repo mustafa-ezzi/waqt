@@ -3,7 +3,7 @@ import { useState } from "react";
 export function WatchImage({ src, alt, className = "", eager = false, ratio = "1 / 1" }) {
   const [ok, setOk] = useState(true);
 
-  if (!ok) {
+  if (!src || !ok) {
     return (
       <div
         className={`watch-fallback ${className}`}

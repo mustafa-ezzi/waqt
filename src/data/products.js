@@ -17,7 +17,7 @@ const img = {
     "https://images.unsplash.com/photo-1609587312208-cea54be969e7?auto=format&fit=crop&w=1400&q=80",
   heritage:
     "https://images.unsplash.com/photo-1612817159949-195b6eb9e31a?auto=format&fit=crop&w=1400&q=80",
-  pair: "/watches/brand/hero-pair.png",
+  // pair: "/watches/brand/hero-pair.png",
 };
 
 export const categories = [
@@ -50,7 +50,7 @@ export const products = [
     ],
     images: {
       hero: img.goldDress,
-      gallery: [img.pair, img.braceletClose],
+      gallery: [ img.braceletClose],
     },
     featured: true,
     featuredOrder: 1,
@@ -77,7 +77,7 @@ export const products = [
     ],
     images: {
       hero: img.classicFace,
-      gallery: [img.pair, img.roundLeather],
+      gallery: [ img.roundLeather],
     },
     featured: true,
     featuredOrder: 2,
@@ -245,6 +245,114 @@ export const products = [
     featuredOrder: 8,
     inStock: true,
   },
+  {
+    id: "wqt-009",
+    slug: "argent",
+    name: "Argent",
+    category: "classic",
+    overline: "Silver · Crystal hours · Double curb chain",
+    price: 185000,
+    currency: "PKR",
+    short: "A black dial, twelve crystals, a silver chain that behaves like jewelry.",
+    description:
+      "Argent is a dress watch that prefers to be held as a jewel. The round silver case opens onto a matte black dial, each hour marked by a small square crystal rather than a numeral. Slender silver hands keep the time without interrupting the face. The bracelet begins as a double curb chain — two living lines of silver — then settles into a classic link clasp. It is the piece for a white-glove hour: evening, arrival, a navy box opened and closed.",
+    specs: [
+      { label: "Case", value: "Round, polished silver-tone" },
+      { label: "Dial", value: "Matte black, square crystal hour markers" },
+      { label: "Hands", value: "Silver hour, minute, and seconds" },
+      { label: "Bracelet", value: "Double curb chain into a folding silver link clasp" },
+      { label: "Strap", value: "—" },
+      { label: "Size", value: "Women’s dress, round" },
+      { label: "Movement note", value: "Quartz, jewelry-grade" },
+    ],
+    images: {
+      hero: "product/Argent.jpeg",
+      gallery: [],
+    },
+    inStock: true,
+  },
+  {
+    id: "wqt-010",
+    slug: "azur",
+    name: "Azur",
+    category: "gold",
+    overline: "Yellow gold · Sunburst navy · Grain bracelet",
+    price: 215000,
+    currency: "PKR",
+    short: "A small gold case. A navy dial that keeps catching the light.",
+    description:
+      "Azur is gold against deep blue. The petite round case is highly polished; the dial is a sunburst navy that moves as the wrist turns, with four small crystals at 12, 3, 6, and 9. Gold hands, a quiet crown, no theatre of numbers. The bracelet is the jewelry of the piece: rounded grain links, like polished pebbles in gold, flexible and close to the skin. A salon watch — warm rooms, glass cases, an hour that already knows it is being seen.",
+    specs: [
+      { label: "Case", value: "Petite round, polished gold-tone" },
+      { label: "Dial", value: "Sunburst navy, crystal markers at 12, 3, 6, and 9" },
+      { label: "Hands", value: "Gold hour and minute" },
+      { label: "Bracelet", value: "Gold grain / pebble-link" },
+      { label: "Strap", value: "—" },
+      { label: "Size", value: "Petite dress" },
+      { label: "Movement note", value: "Quartz, jewelry-grade" },
+    ],
+    images: {
+      hero: "",
+      gallery: [],
+    },
+    featured: false,
+    featuredOrder: 10,
+    inStock: true,
+  },
+  {
+    id: "wqt-011",
+    slug: "fauve",
+    name: "Fauve",
+    category: "statement",
+    overline: "Yellow gold · Leopard dial · Scale bracelet",
+    price: 245000,
+    currency: "PKR",
+    short: "A teardrop of gold. A leopard hour. Jewelry that happens to keep time.",
+    description:
+      "Fauve is the house at its most maximal. A polished gold teardrop case — the head of a serpent — holds a leopard dial in tan, brown, and black, with gold Roman hours at the quarters and thin gold hands. The crown sits at the top of the head. The bracelet is scale-work: hexagonal gold links in rows, a honeycomb that reads as skin and as jewel. Photographed in black, it throws its own reflection. For the wrist that wants to be the room.",
+    specs: [
+      { label: "Case", value: "Teardrop / serpent-head, polished yellow gold-tone" },
+      { label: "Dial", value: "Leopard print, gold Roman numerals at 12, 3, 6, and 9" },
+      { label: "Hands", value: "Slender gold hour and minute" },
+      { label: "Bracelet", value: "Integrated gold scale / honeycomb link" },
+      { label: "Strap", value: "—" },
+      { label: "Size", value: "Statement, jewelry wrist" },
+      { label: "Movement note", value: "Quartz, jewelry-grade" },
+    ],
+    images: {
+      hero: "",
+      gallery: [],
+    },
+    featured: false,
+    featuredOrder: 4,
+    inStock: true,
+  },
+  {
+    id: "wqt-012",
+    slug: "jubilee",
+    name: "Jubilee",
+    category: "classic",
+    overline: "Two-tone · Fluted gold bezel · Diamond indices",
+    price: 275000,
+    currency: "PKR",
+    short: "Steel and gold in one circle. A fluted bezel. A dial of quiet diamonds.",
+    description:
+      "Jubilee is the classic two-tone hour. A silver-tone case is crowned with a fluted yellow-gold bezel; the dial is a soft silver grid, linen-textured, with ten diamond-set indices in square gold mounts and three slender gold hands. The bracelet is five-link: brushed steel at the edges, polished gold in the centre — a jubilee rhythm. It is the piece that looks like it has always belonged on the wrist, even the first time it is worn.",
+    specs: [
+      { label: "Case", value: "Round steel, yellow-gold fluted bezel" },
+      { label: "Dial", value: "Textured silver grid, diamond indices in gold settings" },
+      { label: "Hands", value: "Gold hour, minute, and seconds" },
+      { label: "Bracelet", value: "Five-link two-tone jubilee" },
+      { label: "Strap", value: "—" },
+      { label: "Size", value: "Classic round" },
+      { label: "Movement note", value: "Quartz, jewelry-grade" },
+    ],
+    images: {
+      hero: "product/jubilee.jpeg",
+      gallery: [],
+    },
+    inStock: true,
+  },
 ];
 
 export function getProductById(id) {
@@ -271,5 +379,7 @@ export function productImage(product, key = "hero") {
 }
 
 export function allProductViews(product) {
-  return [r2(product.images.hero), ...(product.images.gallery || []).map((p) => r2(p))];
+  return [r2(product.images.hero), ...(product.images.gallery || []).map((p) => r2(p))].filter(
+    Boolean
+  );
 }

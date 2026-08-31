@@ -9,7 +9,7 @@ export const site = {
    * Public R2 base (no trailing slash). Unused while product images are
    * absolute URLs or local /public paths. Swap product paths to R2 keys later.
    */
-  r2BaseUrl: "https://pub-xxxxxxxx.r2.dev",
+  r2BaseUrl: "https://pub-b595938c261548e68ebec2b2c60f92b2.r2.dev",
   heroProductId: "wqt-001",
   stillLifeImage: "/watches/brand/hero-pair.png",
   logo: "/logo.jpg",
