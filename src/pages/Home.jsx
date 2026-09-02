@@ -138,7 +138,7 @@ export function Home() {
         <Reveal className="still-frame">
           <WatchImage
             src={r2(site.stillLifeImage)}
-            alt="Jubilee — two-tone fluted bezel"
+            alt="The Two-Tone Classic fluted bezel"
             className="still-img"
             ratio="16 / 9"
           />
