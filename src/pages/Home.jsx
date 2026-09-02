@@ -138,7 +138,7 @@ export function Home() {
         <Reveal className="still-frame">
           <WatchImage
             src={r2(site.stillLifeImage)}
-            alt="The Two-Tone Classic fluted bezel"
+            alt="The Serpent Leopard — gold teardrop, leopard dial"
             className="still-img"
             ratio="16 / 9"
           />
