@@ -50,13 +50,17 @@
 
 .hero-stage {
   position: relative;
-  width: min(72vw, 420px);
+  width: min(88vw, 680px);
   z-index: 1;
 }
 
 .hero-rings {
   position: absolute;
-  inset: -12%;
+  width: 118%;
+  aspect-ratio: 1;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
   border: 1px solid var(--gold-dim);
   pointer-events: none;
@@ -77,7 +81,7 @@
 
 .hero-watch {
   width: 100%;
-  aspect-ratio: 1;
+  aspect-ratio: 16 / 10;
   object-fit: contain;
   filter: drop-shadow(0 28px 40px rgba(0, 0, 0, 0.55));
 }
@@ -152,7 +156,7 @@
 
   .hero-stage {
     order: 2;
-    width: min(38vw, 560px);
+    width: min(46vw, 640px);
     justify-self: end;
   }
 

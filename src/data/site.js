@@ -12,6 +12,7 @@ export const site = {
   r2BaseUrl: "https://pub-b595938c261548e68ebec2b2c60f92b2.r2.dev",
   heroProductId: "wqt-001",
   stillLifeImage: "product/serpentleopard.jpeg",
+  heroImage: "/heroimage.png",
   logo: "/logo.jpg",
 };
 

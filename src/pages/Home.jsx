@@ -2,7 +2,7 @@ import { useRef } from "react";
 import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import { site, r2 } from "../data/site.js";
-import { getFeaturedProducts, getHeroProduct, products } from "../data/products.js";
+import { getFeaturedProducts, products } from "../data/products.js";
 import { Button } from "../components/Button.jsx";
 import { WatchImage } from "../components/WatchImage.jsx";
 import { CornerOrnaments, FiligreeRule } from "../components/Ornaments.jsx";
@@ -15,7 +15,6 @@ gsap.registerPlugin(useGSAP);
 export function Home() {
   usePageTitle("WAAQT");
   const heroRef = useRef(null);
-  const hero = getHeroProduct();
   const featured = getFeaturedProducts();
   const teaser = products.slice(0, 6);
 
@@ -76,8 +75,8 @@ export function Home() {
           <div className="hero-stage">
             <div className="hero-rings" aria-hidden="true" />
             <WatchImage
-              src={r2(hero.images.hero)}
-              alt={`${hero.name} — ${hero.overline}`}
+              src={site.heroImage}
+              alt="WAAQT — a gold-tone timepiece"
               className="hero-watch"
               eager
             />
