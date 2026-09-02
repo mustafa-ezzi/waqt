@@ -50,7 +50,7 @@
 
 .hero-stage {
   position: relative;
-  width: min(88vw, 680px);
+  width: min(96vw, 40rem);
   z-index: 1;
 }
 
@@ -80,10 +80,22 @@
 }
 
 .hero-watch {
+  display: block;
   width: 100%;
-  aspect-ratio: 16 / 10;
+  height: auto;
+  max-height: min(48svh, 28rem);
   object-fit: contain;
   filter: drop-shadow(0 28px 40px rgba(0, 0, 0, 0.55));
+}
+
+@media (min-width: 768px) {
+  .hero-stage {
+    width: min(90vw, 48rem);
+  }
+
+  .hero-watch {
+    max-height: min(56svh, 36rem);
+  }
 }
 
 .hero-copy {
@@ -114,10 +126,10 @@
 
   .hero-layout {
     display: grid;
-    grid-template-columns: 1fr 1.1fr;
+    grid-template-columns: minmax(0, 0.82fr) minmax(0, 1.28fr);
     align-items: center;
-    gap: 2rem;
-    width: min(92vw, 1280px);
+    gap: 1.5rem 2.4rem;
+    width: min(94vw, 1440px);
   }
 
   .hero-side {
@@ -156,8 +168,13 @@
 
   .hero-stage {
     order: 2;
-    width: min(46vw, 640px);
+    width: min(58vw, 52rem);
+    max-width: 100%;
     justify-self: end;
+  }
+
+  .hero-watch {
+    max-height: min(74svh, 44rem);
   }
 
   .hero-copy .filigree {
