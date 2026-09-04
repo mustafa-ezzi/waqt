@@ -13,7 +13,7 @@ export const site = {
   heroProductId: "wqt-001",
   stillLifeImage: "product/serpentleopard.jpeg",
   heroImage: "/heroimage.png",
-  logo: "/logo.jpg",
+  logo: "/logo%20waaqat.png",
 };
 
 export function r2(path) {
