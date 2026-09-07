@@ -550,6 +550,26 @@
   width: 100%;
 }
 
+.collection-boxes {
+  margin-top: 4.5rem;
+  padding-top: 3rem;
+  border-top: var(--hair);
+}
+
+.collection-boxes-head {
+  margin-bottom: 1.6rem;
+}
+
+.collection-boxes-head h2 {
+  font-size: var(--display-m);
+  margin: 0.35rem 0 0.5rem;
+}
+
+.collection-boxes-head p:last-child {
+  color: var(--gold-soft);
+  max-width: 28rem;
+}
+
 /* Product */
 .product {
   padding-bottom: 5rem;

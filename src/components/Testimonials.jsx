@@ -16,9 +16,7 @@ function Card({ review }) {
       <p className="rev-text">“{review.text}”</p>
       <footer className="rev-meta">
         <strong>{review.name}</strong>
-        <span>
-          {review.city} · {review.piece}
-        </span>
+        <span>{review.piece}</span>
       </footer>
     </article>
   );

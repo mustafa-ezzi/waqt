@@ -1,6 +1,7 @@
 import { useMemo } from "react";
 import { useSearchParams } from "react-router-dom";
 import { categories, products } from "../data/products.js";
+import { boxes } from "../data/boxes.js";
 import { ProductCard } from "../components/ProductCard.jsx";
 import { usePageTitle } from "../hooks/usePageTitle.js";
 
@@ -49,6 +50,23 @@ export function Collection() {
           ))}
         </div>
       )}
+
+      <section className="wrap collection-boxes">
+        <header className="collection-boxes-head">
+          <p className="overline">The case</p>
+          <h2>Watch boxes</h2>
+          <p>A house for the hour. Cases will appear here.</p>
+        </header>
+        {boxes.length === 0 ? (
+          <p className="empty-line">Nothing in this chapter yet.</p>
+        ) : (
+          <div className="collection-grid">
+            {boxes.map((p) => (
+              <ProductCard key={p.id} product={p} />
+            ))}
+          </div>
+        )}
+      </section>
     </main>
   );
 }

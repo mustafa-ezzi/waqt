@@ -1,4 +1,5 @@
 import { r2 } from "./site.js";
+import { boxes } from "./boxes.js";
 
 export const categories = [
   { id: "all", label: "All" },
@@ -227,11 +228,11 @@ export const products = [
 ];
 
 export function getProductById(id) {
-  return products.find((p) => p.id === id) ?? null;
+  return products.find((p) => p.id === id) ?? boxes.find((p) => p.id === id) ?? null;
 }
 
 export function getProductBySlug(slug) {
-  return products.find((p) => p.slug === slug) ?? null;
+  return products.find((p) => p.slug === slug) ?? boxes.find((p) => p.slug === slug) ?? null;
 }
 
 export function getFeaturedProducts() {

@@ -1,5 +1,6 @@
 import { createContext, useContext, useMemo, useState, useCallback, useEffect } from "react";
 import { products, getProductById } from "../data/products.js";
+import { boxes } from "../data/boxes.js";
 import { readCart, writeCart } from "../lib/cartStorage.js";
 
 const MAX_QTY = 5;
@@ -60,7 +61,7 @@ export function CartProvider({ children }) {
   const clear = useCallback(() => setRaw({ items: [] }), []);
 
   const value = useMemo(() => {
-    const knownIds = new Set(products.map((p) => p.id));
+    const knownIds = new Set([...products, ...boxes].map((p) => p.id));
     const cleaned = raw.items.filter((i) => knownIds.has(i.productId));
     const items = resolve(cleaned);
     const subtotal = items.reduce((s, i) => s + i.product.price * i.quantity, 0);

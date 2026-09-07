@@ -9,6 +9,7 @@ import { CornerOrnaments, FiligreeRule } from "../components/Ornaments.jsx";
 import { ProductCard } from "../components/ProductCard.jsx";
 import { Reveal } from "../components/Reveal.jsx";
 import { Testimonials } from "../components/Testimonials.jsx";
+import { usePageTitle } from "../hooks/usePageTitle.js";
 
 gsap.registerPlugin(useGSAP);
 
