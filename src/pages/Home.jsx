@@ -8,7 +8,7 @@ import { WatchImage } from "../components/WatchImage.jsx";
 import { CornerOrnaments, FiligreeRule } from "../components/Ornaments.jsx";
 import { ProductCard } from "../components/ProductCard.jsx";
 import { Reveal } from "../components/Reveal.jsx";
-import { usePageTitle } from "../hooks/usePageTitle.js";
+import { Testimonials } from "../components/Testimonials.jsx";
 
 gsap.registerPlugin(useGSAP);
 
@@ -163,6 +163,8 @@ export function Home() {
           ))}
         </div>
       </section>
+
+      <Testimonials />
 
       <section className="house">
         <Reveal className="wrap house-inner">
